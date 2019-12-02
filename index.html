@@ -1,90 +1,115 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
-    <h1>Work Day Scheduler</h1>
-    <h4>A simple calendar app for scheduling your work day</h3>
-        <h4></h4>
-        <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
 </head>
 
 <body>
-    <div class="scheduler-container">
-        <div class="hour-large-container">
-            <div class="time-block">9am</div>
-            <div class="hour-container">
+    <header class="jumbotron">
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+        <!-- Timeblocks go here -->
+        <div class="scheduler-container">
+            <div class="hour-large-container">
+                <div class="time-block">9am</div>
+                <div class="hour-container">
+                    <textarea class="todo todo9am"></textarea>
+                </div>
+                <div class="save-block">
+                    <button class="saveBtn" id="9am"></button>
+                </div>
             </div>
-            <div class="save-block">
-                <button id="save"></button>
+            <div class="hour-large-container">
+                <div class="time-block">10am</div>
+                <div class="hour-container">
+                    <textarea class="todo todo10am"></textarea>
+                </div>
+                <div class="save-block">
+                    <button class="saveBtn" id="10am"></button>
+                </div>
             </div>
-        </div>
-        <div class="hour-large-container">
-            <div class="time-block">10am</div>
-            <div class="hour-container">
+            <div class="hour-large-container">
+                <div class="time-block">11am</div>
+                <div class="hour-container">
+                    <textarea class="todo todo11am"></textarea>
+                </div>
+                <div class="save-block">
+                    <button class="saveBtn" id="11am"></button>
+                </div>
             </div>
-            <div class="save-block">
-                <button id="save"></button>
+            <div class="hour-large-container">
+                <div class="time-block">12pm</div>
+                <div class="hour-container">
+                    <textarea class="todo todo12pm"></textarea>
+                </div>
+                <div class="save-block">
+                    <button class="saveBtn" id="12pm"></button>
+                </div>
             </div>
-        </div>
-        <div class="hour-large-container">
-            <div class="time-block">11am</div>
-            <div class="hour-container">
+            <div class="hour-large-container">
+                <div class="time-block">1pm</div>
+                <div class="hour-container">
+                    <textarea class="todo todo1pm"></textarea>
+                </div>
+                <div class="save-block">
+                    <button class="saveBtn" id="1pm"></button>
+                </div>
             </div>
-            <div class="save-block">
-                <button id="save"></button>
+            <div class="hour-large-container">
+                <div class="time-block">2pm</div>
+                <div class="hour-container">
+                    <textarea class="todo todo2pm"></textarea>
+                </div>
+                <div class="save-block">
+                    <button class="saveBtn" id="2pm"></button>
+                </div>
             </div>
-        </div>
-        <div class="hour-large-container">
-            <div class="time-block">12pm</div>
-            <div class="hour-container">
-            </div>
-            <div class="save-block">
-                <button id="save"></button>
-            </div>
-        </div>
-        <div class="hour-large-container">
-            <div class="time-block">1pm</div>
-            <div class="hour-container">
-            </div>
-            <div class="save-block">
-                <button id="save"></button>
-            </div>
-        </div>
-        <div class="hour-large-container">
-            <div class="time-block">2pm</div>
-            <div class="hour-container">
-            </div>
-            <div class="save-block">
-                <button id="save"></button>
-            </div>
-        </div>
 
-        <div class="hour-large-container">
-            <div class="time-block">3pm</div>
-            <div class="hour-container">
+            <div class="hour-large-container">
+                <div class="time-block">3pm</div>
+                <div class="hour-container">
+                    <textarea class="todo todo3pm"></textarea>
+                </div>
+                <div class="save-block">
+                    <button class="saveBtn" id="3pm"></button>
+                </div>
             </div>
-            <div class="save-block">
-                <button id="save"></button>
+            <div class="hour-large-container">
+                <div class="time-block">4pm</div>
+                <div class="hour-container">
+                    <textarea class="todo todo4pm"></textarea>
+                </div>
+                <div class="save-block">
+                    <button class="saveBtn" id="4pm"></button>
+                </div>
             </div>
-        </div>
-        <div class="hour-large-container">
-            <div class="time-block">4pm</div>
-            <div class="hour-container">
-            </div>
-            <div class="save-block">
-                <button id="save"></button>
-            </div>
-        </div>
-        <div class="hour-large-container">
-            <div class="time-block">5pm</div>
-            <div class="hour-container">
-            </div>
-            <div class="save-block">
-                <button id="save"></button>
+            <div class="hour-large-container">
+                <div class="time-block">5pm</div>
+                <div class="hour-container">
+                    <textarea class="todo todo5pm"></textarea>
+                </div>
+                <div class="save-block">
+                    <button class="saveBtn" id="5pm"></button>
+                </div>
             </div>
         </div>
     </div>
-    <script src="./js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
