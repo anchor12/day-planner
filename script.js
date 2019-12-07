@@ -35,7 +35,7 @@ $(document).ready(function () {
     var hourToCheckEarly = (now.day() !== 0) ? 08 : 00;
     var dateToCheckEarly = now.hour(hourToCheckEarly).minute(00);
     var t;
-    if (!(moment().isAfter(dateToCheckLate) && moment().isBefore(dateToCheckEarly))) {
+    if (!((moment().isAfter(dateToCheckLate)) && !(moment().isBefore(dateToCheckEarly)))) {
         for (t = 0; t < times.length; t++) {
             if (parseInt(times[t].substr(4, times.length - 2)) === parseInt(hourNow)) {
                 var textClass = "textarea." + times[t] + "";
