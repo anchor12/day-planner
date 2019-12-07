@@ -27,10 +27,8 @@ $(document).ready(function () {
         }
     }
     var times = Object.keys(todoObject);
-    console.log('Times from todoObject: ' + times);
     var todos = Object.values(todoObject);
     var hourNow = moment().format('LT').split(':')[0];
-    console.log("HourNow var: " + hourNow);
     var now = moment();
     var hourToCheckLate = (now.day() !== 0) ? 18 : 00;
     var dateToCheckLate = now.hour(hourToCheckLate).minute(00);
